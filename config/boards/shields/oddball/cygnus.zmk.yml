@@ -1,6 +1,6 @@
 file_format: "1"
-id: oddball
-name: Oddball
+id: cygnus
+name: cygnus
 type: shield
 url: https://github.com/atulloh/oddball
 requires: [pro_micro]
@@ -8,5 +8,5 @@ features:
   - keys
   - pointer
 siblings:
-  - oddball_left
-  - oddball_right
+  - cygnus_left
+  - cygnus_right

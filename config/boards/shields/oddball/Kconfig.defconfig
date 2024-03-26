@@ -1,14 +1,14 @@
-if SHIELD_ODDBALL_RIGHT
+if SHIELD_CYGNUS_RIGHT
 
 config ZMK_KEYBOARD_NAME
-	default "Oddball"
+	default "cygnus"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
 
 endif
 
-if SHIELD_ODDBALL_LEFT || SHIELD_ODDBALL_RIGHT
+if SHIELD_CYGNUS_LEFT || SHIELD_CYGNUS_RIGHT
 
 config ZMK_SPLIT
 	default y

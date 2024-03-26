@@ -1,5 +1,5 @@
-config SHIELD_ODDBALL_LEFT
-	def_bool $(shields_list_contains,oddball_left)
+config SHIELD_CYGNUS_LEFT
+	def_bool $(shields_list_contains,cygnus_left)
 
-config SHIELD_ODDBALL_RIGHT
-	def_bool $(shields_list_contains,oddball_right)
+config SHIELD_CYGNUS_RIGHT
+	def_bool $(shields_list_contains,cygnus_right)

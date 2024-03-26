@@ -58,6 +58,7 @@
         /*   optional features   */
         snipe-layers = <2>;
         scroll-layers = <1>;
-       // automouse-layer = <5>; // automouse-layer为球动层动功能，但由于天鹅座球重量小，打字会晃动球导致切换到鼠标层，建议关闭，需要开启只需要将前面的//删除即可
+       // automouse-layer = <5>; 
+       // automouse-layer为球动层动功能，但由于天鹅座球重量小，打字会晃动球导致切换到鼠标层，建议关闭，需要开启只需要将前面的//删除即可
     };
 };

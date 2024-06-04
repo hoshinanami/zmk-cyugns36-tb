@@ -7,7 +7,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: 7e45c4f
+      revision: 3ff6051
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: inorichi

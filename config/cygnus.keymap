@@ -1,7 +1,8 @@
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <240>;
@@ -137,10 +138,10 @@
         Base {
             label = "Base";
             bindings = <
-&mt LEFT_ALT ESC  &kp Q  &kp W  &kp E         &kp R         &kp T         &kp Y  &kp U         &kp I          &kp O    &kp P                    &kp DEL
-&mt LCTRL TAB     &kp A  &kp S  &kp D         &kp F         &kp G         &kp H  &kp J         &kp K          &kp L    &mt RIGHT_ALT SEMICOLON  &mt RCTRL SQT
-&kp LEFT_SHIFT    &kp Z  &kp X  &kp C         &kp V         &kp B         &kp N  &kp M         &kp COMMA      &kp DOT  &as QUESTION SLASH       &mt RIGHT_SHIFT K_APPLICATION
-                                &kp LEFT_WIN  &ltq 3 ENTER  &ltq 2 SPACE         &ltq 1 ENTER  &kp BACKSPACE
+&mt LEFT_ALT ESC  &kp Q  &kp W  &kp E         &kp R  &kp T         &kp Y  &kp U         &kp I          &kp O    &kp P                    &kp DEL
+&mt LCTRL TAB     &kp A  &kp S  &kp D         &kp F  &kp G         &kp H  &kp J         &kp K          &kp L    &mt RIGHT_ALT SEMICOLON  &mt RCTRL SQT
+&kp LEFT_SHIFT    &kp Z  &kp X  &kp C         &kp V  &kp B         &kp N  &kp M         &kp COMMA      &kp DOT  &as QUESTION SLASH       &mt RIGHT_SHIFT K_APPLICATION
+                                &kp LEFT_WIN  &mo 3  &ltq 2 SPACE         &ltq 1 ENTER  &kp BACKSPACE
             >;
         };
 
@@ -170,12 +171,12 @@
 &as TILDE GRAVE  &kp PG_UP   &kp LC(ENTER)    &kp UP    &kp LPAR   &kp HOME     &kp PG_UP  &kp RPAR       &trans    &kp RC(RA(O))  &kp RC(P)           &kp K_MUTE
 &kp TILDE        &kp PG_DN   &kp LEFT         &kp DOWN  &kp RIGHT  &kp END      &kp PG_DN  &kp HOME       &kp END   &kp RG(L)      &as BACKSLASH PIPE  &kp RC(ENTER)
 &trans           &kp DOLLAR  &kp EXCLAMATION  &kp AT    &kp POUND  &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp STAR  &kp UNDER      &kp EQUAL           &trans
-                                              &trans    &trans     &to 2                   &trans         &trans
+                                              &trans    &trans     &trans                  &trans         &mo 4
             >;
         };
 
-        Shortcut {
-            label = "shortcut";
+        BLE {
+            label = "bluetooth";
             bindings = <
 &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none  &none   &trans  &none  &none  &none
 &none  &bt BT_CLR    &bt BT_NXT    &none         &none         &none         &none  &none   &none   &none  &none  &none
